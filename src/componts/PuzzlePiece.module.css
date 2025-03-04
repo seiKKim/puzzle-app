@@ -1,0 +1,16 @@
+.puzzle-piece {
+    /* 퍼즐 조각 컨테이너 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .puzzle-piece:hover {
+    transform: scale(1.05); /* 마우스 호버 시 약간 확대 */
+  }
+  

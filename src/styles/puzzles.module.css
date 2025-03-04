@@ -1,0 +1,65 @@
+/* puzzles.module.css */
+
+/* 메인 스타일 */
+.main {
+    padding: 1.5rem;
+  }
+  
+  /* 제목 스타일 */
+  .title {
+    text-align: center;
+    font-size: 1.875rem; /* 24px */
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+  
+  /* 그리드 레이아웃 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  /* 카드 스타일 */
+  .card {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 이미지 스타일 */
+  .cardImage {
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* 버튼 스타일 */
+  .cardButton {
+    background-color: #2563eb; /* Tailwind Blue-600 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .cardButton:hover {
+    background-color: #1d4ed8; /* Tailwind Blue-700 */
+  }
+  
+  /* 상태 메시지 */
+  .emptyMessage {
+    text-align: center;
+    color: #6b7280; /* Tailwind Gray-500 */
+    font-size: 1.125rem; /* 18px */
+  }
+  

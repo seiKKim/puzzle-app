@@ -1,0 +1,43 @@
+/* 업로드 폼 스타일 */
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .preview img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+  }
+  
+  .uploadButton {
+    background-color: #0073e6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .uploadButton.disabled {
+    background-color: #cce7ff;
+    cursor: not-allowed;
+  }
+  

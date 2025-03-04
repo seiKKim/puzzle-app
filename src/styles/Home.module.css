@@ -1,0 +1,104 @@
+/* 홈 페이지 스타일링 */
+
+/* 메인 컨테이너 */
+.main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 헤더 스타일 */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* 섹션 스타일 */
+  .sectionTitle {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .uploadSection {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .preview {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .previewImage {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startGameButton {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .startGameButton:hover {
+    background-color: #005bb5;
+  }
+  
+  /* 기본 퍼즐 섹션 */
+  .defaultPuzzlesSection {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .puzzles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .puzzleItem {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .puzzleItem img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .puzzleItem img:hover {
+    transform: scale(1.05);
+  }
+  
+  .puzzleItem p {
+    margin-top: 0.5rem;
+    color: #333;
+    font-size: 1rem;
+  }
+  

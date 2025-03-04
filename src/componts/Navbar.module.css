@@ -1,0 +1,80 @@
+/* 전체 네비게이션 바 */
+.navbar {
+    background-color: #0073e6;
+    color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 내부 전체 컨테이너 */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* 로고 */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    color: #cce7ff; /* 로고 호버 효과 */
+  }
+  
+  /* 햄버거 버튼 (모바일 전용) */
+  .hamburgerButton {
+    display: none; /* 기본적으로 숨김 */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 햄버거 버튼 아이콘 */
+  .hamburgerIcon {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+  }
+  
+  /* 데스크탑용 링크들 */
+  .links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* 링크 스타일 */
+  .link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #cce7ff; /* 링크 호버 효과 */
+  }
+  
+  /* 모바일용 링크들 */
+  .linksMobileOpen {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* 반응형: 모바일 화면 */
+  @media (max-width: 768px) {
+    .hamburgerButton {
+      display: inline; /* 모바일에서 햄버거 버튼 표시 */
+    }
+  
+    .links {
+      display: none; /* 기본적으로 숨김 */
+    }
+  }
+  
